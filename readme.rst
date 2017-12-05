@@ -9,8 +9,8 @@ Release Information
 *******************
 
 This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<http://www.codeigniter.com/download>`_ page.
+latest stable release please visit the `Website
+<http://www.fejiefariolen.com/lot-reservation-system>`_ page.
 
 **************************
 Changelog and New Features
