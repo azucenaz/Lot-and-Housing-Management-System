@@ -13,7 +13,7 @@ public function __construct(){
 
 public function index()
 {
-$this->load->view("login.php");
+$this->load->view("login");
 }
 
 public function register_user(){
