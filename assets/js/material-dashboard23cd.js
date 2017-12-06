@@ -1,36 +1,4 @@
-/*! =========================================================
- *
- * Material Dashboard PRO - V1.2.1
- *
- * =========================================================
- *
- * Copyright 2016 Creative Tim (http://www.creative-tim.com/product/material-dashboard-pro)
- *
- *
- *                       _oo0oo_
- *                      o8888888o
- *                      88" . "88
- *                      (| -_- |)
- *                      0\  =  /0
- *                    ___/`---'\___
- *                  .' \|     |// '.
- *                 / \|||  :  |||// \
- *                / _||||| -:- |||||- \
- *               |   | \\  -  /// |   |
- *               | \_|  ''\---/''  |_/ |
- *               \  .-\__  '-'  ___/-. /
- *             ___'. .'  /--.--\  `. .'___
- *          ."" '<  `.___\_<|>_/___.' >' "".
- *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
- *         \  \ `_.   \_ __\ /__ _/   .-` /  /
- *     =====`-.____`.___ \_____/___.-`___.-'=====
- *                       `=---='
- *
- *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- *
- *               Buddha Bless:  "No Bugs"
- *
- * ========================================================= */
+
 
 (function() {
     isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
@@ -341,37 +309,6 @@ md = {
     }, 200),
 
 
-    // initBootstrapNavbarMenu: debounce(function(){
-    //
-    //     if(!bootstrap_nav_initialized){
-    //         $navbar = $('nav').find('.navbar-collapse').first().clone(true);
-    //
-    //         nav_content = '';
-    //         mobile_menu_content = '';
-    //
-    //         //add the content from the regular header to the mobile menu
-    //         $navbar.children('ul').each(function(){
-    //             content_buff = $(this).html();
-    //             nav_content = nav_content + content_buff;
-    //         });
-    //
-    //         nav_content = '<ul class="nav nav-mobile-menu">' + nav_content + '</ul>';
-    //
-    //         $navbar.html(nav_content);
-    //         $navbar.addClass('off-canvas-sidebar');
-    //
-    //         // append it to the body, so it will come from the right side of the screen
-    //         $('body').append($navbar);
-    //
-    //         $toggle = $('.navbar-toggle');
-    //
-    //         $navbar.find('a').removeClass('btn btn-round btn-default');
-    //         $navbar.find('button').removeClass('btn-round btn-fill btn-info btn-primary btn-success btn-danger btn-warning btn-neutral');
-    //         $navbar.find('button').addClass('btn-simple btn-block');
-    //
-    //         bootstrap_nav_initialized = true;
-    //     }
-    // }, 500),
 
     startAnimationForLineChart: function(chart) {
 
@@ -444,15 +381,3 @@ function debounce(func, wait, immediate) {
 };
 
 
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-46172202-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})();
