@@ -1,0 +1,23 @@
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `user_name`, `user_email`, `user_password`, `user_age`, `user_mobile`) VALUES
+(1, 'Ehtesham', 'ehtesham@gmail.com', '123', 23, 334443333),
+(2, 'Ehtesham', 'ehtesham@gmail.com', '123', 23, 2147483647),
+(3, 'farrukh', 'farrukh@gmail.com', '123', 32, 232342343),
+(4, 'zaid', 'zaid@gmail.com', '202cb962ac59075b964b07152d234b70', 23, 324234234);
+
+
+--
+-- Table structure for table `user`
+--
+ 
+CREATE TABLE `user` (
+`user_id` int(11) NOT NULL,
+`user_name` varchar(50) NOT NULL,
+`user_email` varchar(50) NOT NULL,
+`user_password` varchar(50) NOT NULL,
+`user_age` int(11) NOT NULL,
+`user_mobile` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
