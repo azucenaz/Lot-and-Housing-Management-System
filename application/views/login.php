@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>>Lot Management System</title>
+    <title>Lot Management System</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet" />
@@ -39,9 +39,7 @@
                         <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
                             <form method="#" action="#">
                                 <div class="card card-login card-hidden">
-                                    <p class="category text-center">
-                                        Or Be Classical
-                                    </p>
+                                    <h3 class="text-centert">LOGIN CREDENTIALS</h3>
                                     <div class="card-content">
                                         <div class="input-group">
                                             <span class="input-group-addon">
