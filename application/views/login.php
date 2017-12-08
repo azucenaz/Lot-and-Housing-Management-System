@@ -37,9 +37,27 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                            <form method="#" action="#">
+                            <form method="post" role="form" action="<?php echo base_url('user/login_user'); ?>">
                                 <div class="card card-login card-hidden">
-                                    <h3 class="text-centert">LOGIN CREDENTIALS</h3>
+                                    <?php
+                                      $success_msg= $this->session->flashdata('success_msg');
+                                      $error_msg= $this->session->flashdata('error_msg');
+
+                                          if($success_msg){
+                                            ?>
+                                            <div class="alert alert-success">
+                                              <?php echo $success_msg; ?>
+                                            </div>
+                                          <?php
+                                          }
+                                          if($error_msg){
+                                            ?>
+                                            <div class="alert alert-danger">
+                                              <?php echo $error_msg; ?>
+                                            </div>
+                                            <?php
+                                          }
+                                    ?>
                                     <div class="card-content">
                                         <div class="input-group">
                                             <span class="input-group-addon">
@@ -47,7 +65,7 @@
                                             </span>
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Username</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="user_email">
                                             </div>
                                         </div>
                                         <div class="input-group">
@@ -56,12 +74,12 @@
                                             </span>
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Password</label>
-                                                <input type="password" class="form-control" required="true">
+                                                <input type="password" class="form-control" name="user_password" required="true">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="footer text-center">
-                                        <button type="submit" class="btn btn-success btn-wd btn-lg">LOGIN</button>
+                                        <button type="submit" class="btn btn-success btn-wd btn-lg" value="login" name="login">LOGIN</button>
                                     </div>
                                 </div>
                             </form>
